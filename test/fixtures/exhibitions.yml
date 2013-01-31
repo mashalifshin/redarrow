@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  artist: 
+  reception_date: 2013-01-30 17:52:28
+  opening: 2013-01-30
+  closing: 2013-01-30
+  description: MyText
+
+two:
+  title: MyString
+  artist: 
+  reception_date: 2013-01-30 17:52:28
+  opening: 2013-01-30
+  closing: 2013-01-30
+  description: MyText
