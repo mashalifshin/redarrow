@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130131020204) do
+ActiveRecord::Schema.define(:version => 20130201011635) do
 
   create_table "about_infos", :force => true do |t|
     t.string   "title"
@@ -31,6 +31,18 @@ ActiveRecord::Schema.define(:version => 20130131020204) do
     t.text     "body"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "exhibition_images", :force => true do |t|
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "exhibition_image"
+    t.integer  "exhibition_id"
+    t.string   "artist"
+    t.string   "title"
+    t.integer  "year"
+    t.string   "media"
+    t.string   "dimensions"
   end
 
   create_table "exhibitions", :force => true do |t|
@@ -63,8 +75,9 @@ ActiveRecord::Schema.define(:version => 20130131020204) do
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
   create_table "slideshow_images", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "slideshow_image"
   end
 
   create_table "users", :force => true do |t|
