@@ -95,10 +95,10 @@ rails_admin/rails_admin.js: rails_admin/rails_admin-d5969f96f2100a4961ba71ff7466
 rails_admin/rails_admin/index.js: rails_admin/rails_admin-d5969f96f2100a4961ba71ff746687b0.js
 rails_admin/base/README.txt: rails_admin/base/README-a926caeed07918a356b1702cf5e6c07b.txt
 rails_admin/base/README/index.txt: rails_admin/base/README-a926caeed07918a356b1702cf5e6c07b.txt
-rails_admin/jquery.colorpicker.css: rails_admin/jquery.colorpicker-9bc9629ede478f41e98f041261db746c.css
-rails_admin/jquery/index.colorpicker.css: rails_admin/jquery.colorpicker-9bc9629ede478f41e98f041261db746c.css
-rails_admin/rails_admin.css: rails_admin/rails_admin-0259d32d8d6666bd7182a876ba593b35.css
-rails_admin/rails_admin/index.css: rails_admin/rails_admin-0259d32d8d6666bd7182a876ba593b35.css
+rails_admin/jquery.colorpicker.css: rails_admin/jquery.colorpicker-8582588b600084c177ef37834ea3b77e.css
+rails_admin/jquery/index.colorpicker.css: rails_admin/jquery.colorpicker-8582588b600084c177ef37834ea3b77e.css
+rails_admin/rails_admin.css: rails_admin/rails_admin-426917ac7b9562872397635393d85c05.css
+rails_admin/rails_admin/index.css: rails_admin/rails_admin-426917ac7b9562872397635393d85c05.css
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-7d1197a52442bc56fcad60d0390f4b32.png
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100/index.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-7d1197a52442bc56fcad60d0390f4b32.png
 jquery-ui/ui-bg_flat_75_ffffff_40x100.png: jquery-ui/ui-bg_flat_75_ffffff_40x100-3c4b974defa5e8bdaf8a603034c4435e.png
