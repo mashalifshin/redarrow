@@ -27,6 +27,8 @@ gem 'rails_admin'
 
 gem 'carrierwave'
 
+gem 'fog'
+
 group :production do
   gem 'unicorn'
 #  gem "rmagick", "2.12.0", :require => 'RMagick'

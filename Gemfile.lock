@@ -177,6 +177,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
   devise
+  fog
   jquery-rails
   pg
   rails (= 3.2.11)
