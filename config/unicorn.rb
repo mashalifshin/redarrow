@@ -1,3 +1,13 @@
+before_fork do |server, worker|
+  defined?(ActiveRecord::Base) and
+      ActiveRecord::Base.connection.disconnect!
+end
+
+after_fork do |server, worker|
+   defined?(ActiveRecord::Base) and
+      ActiveRecord::Base.establish_connection
+end
+
 # If you have a very small app you may be able to
 # increase this, but in general 3 workers seems to
 # work best
