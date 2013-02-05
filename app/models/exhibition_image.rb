@@ -1,10 +1,8 @@
 class ExhibitionImage < ActiveRecord::Base
   belongs_to :exhibition
 
-  attr_accessible :exhibition_image, :exhibition_image_cache, :remove_exhibition_image, :exhibition_id, :artist, 
-                  :title, :year, :media, :dimensions, :exhibition_attributes
+  attr_accessible :image, :image_cache, :remove_image, :exhibition_id, :artist,
+                  :title, :year, :media, :dimensions
     
-  accepts_nested_attributes_for :exhibition, :allow_destroy => true
-  
-  mount_uploader :exhibition_image, ExhibitionImageUploader
+  mount_uploader :image, ExhibitionImageUploader
 end
