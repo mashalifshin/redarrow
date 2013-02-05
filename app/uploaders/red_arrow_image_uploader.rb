@@ -16,9 +16,9 @@ class RedArrowImageUploader < CarrierWave::Uploader::Base
   storage :fog
 
   # Use temp for cache directory on heroku
-  # def cache_dir
-  #  "#{Rails.root}/tmp/uploads"
-  # end
+  def cache_dir
+    "#{Rails.root}/tmp/uploads"
+  end
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
