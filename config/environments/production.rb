@@ -43,7 +43,7 @@ Theredarrowgallery::Application.configure do
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from Amazon Cloudfront
-  config.action_controller.asset_host = "https://#{ENV['CLOUDFRONT_DISTRIBUTION_DOMAIN']}"
+  config.action_controller.asset_host = "http://#{ENV['CLOUDFRONT_DISTRIBUTION_DOMAIN']}"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
