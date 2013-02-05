@@ -1,7 +1,6 @@
 CarrierWave.configure do |config|
   # To make uploads across form redisplays work on heroku, the following two lines
-  config.root = Rails.root.join('tmp')
-  config.cache_dir = 'uploads'
+  config.cache_dir = "#{Rails.root}/tmp/uploads"
  
   config.fog_credentials = {
     :provider                   => "AWS",
@@ -10,6 +9,4 @@ CarrierWave.configure do |config|
   }
   
   config.fog_directory  = ENV['FOG_DIRECTORY']    # for cloudfront
-  config.fog_public     = false                   # optional, defaults to true
-
 end
