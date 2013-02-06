@@ -29,9 +29,10 @@ gem 'carrierwave'
 
 gem 'fog'
 
+gem 'mini_magick'
+
 group :production do
   gem 'unicorn'
-#  gem "rmagick", "2.12.0", :require => 'RMagick'
 end
 
 
