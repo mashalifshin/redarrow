@@ -1,3 +1,3 @@
 class AboutInfo < ActiveRecord::Base
-  attr_accessible :body, :title
+  attr_accessible :body, :title, :live
 end
