@@ -16,3 +16,6 @@
 
 # Ignore environment configuration with secretz
 /config/local_env.yml
+
+# Ignore DS_store
+.DS_store
