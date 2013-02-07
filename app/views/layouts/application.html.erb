@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Theredarrowgallery</title>
+  <title> Red Arrow Art Gallery </title>
+
+  <%= favicon_link_tag %>
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag 	 "http://fonts.googleapis.com/css?family=Poiret+One", :media => "all" %>
+
   <%= javascript_include_tag "application" %>
+
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<%= render "shared/navigation_and_logo" %>
 
-	<%= yield %>
+	<div id="port">
+		<%= yield %>
+	</div>
+
+	<%= render "shared/gallery_information_footer" %>
 
 </body>
 </html>

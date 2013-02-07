@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130207000506) do
+ActiveRecord::Schema.define(:version => 20130207011107) do
 
   create_table "about_infos", :force => true do |t|
     t.string   "title"
@@ -73,10 +73,11 @@ ActiveRecord::Schema.define(:version => 20130207000506) do
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
   create_table "slideshow_images", :force => true do |t|
-    t.datetime "created_at",                         :null => false
-    t.datetime "updated_at",                         :null => false
-    t.string   "slideshow_image"
-    t.boolean  "live",            :default => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.string   "image"
+    t.boolean  "live",       :default => false
+    t.string   "caption"
   end
 
   create_table "users", :force => true do |t|

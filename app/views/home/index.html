@@ -1,0 +1,12 @@
+<div id="home" class="pane flexslider">								
+	<ul class="slides">
+		<% @slideshow_images.shuffle.each do |slideshow_image| %>
+			<li>
+				<%= image_tag slideshow_image.image.url, :class => "slide" %>
+				<p class="flex-caption">
+					<%= slideshow_image.caption %>						
+				</p>
+			</li>		
+		<% end %>
+	</ul>	
+</div>

@@ -1,5 +1,7 @@
 class SlideshowImage < ActiveRecord::Base
-  attr_accessible :slideshow_image, :slideshow_image_cache, :remove_slideshow_image, :live
+  attr_accessible :image, :image_cache, :remove_image, :live, :caption
   
-  mount_uploader :slideshow_image, SlideshowImageUploader
+  mount_uploader :image, SlideshowImageUploader
+
+  scope :live,          :conditions => "live IS TRUE"
 end
