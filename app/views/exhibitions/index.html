@@ -1,0 +1,51 @@
+<div id="exhibitions" class="pane">
+	<% @exhibitions.each do |exhibition| %>
+		<div class="exhibition">
+			<div class="info">
+				<div class="name title"><%= exhibition.title %></div>
+				<div class="artists"><%= exhibition.artists %></div>
+				<div class="opening">
+					<span class="title">Reception</span>
+					<%= exhibition.reception_date %>
+				</div>
+				<div class="dates">
+					<span class="title">Dates</span>
+					<%= exhibition.opening %> - <%= exhibition.closing %>
+				</div>
+				<div class="thumbnails">
+					<% exhibition.exhibition_images.each do |exhibition_image| %>
+							<%= link_to image_tag(exhibition_image.image.thumbnail, 
+								:class => "thumbnail", 
+								:alt => exhibition_image.artist + " - " + exhibition_image.title + " - " + 
+										exhibition_image.year.to_s + " - " + exhibition_image.media + " - " + 
+										exhibition_image.dimensions,
+								:data => {"image" => exhibition_image}),
+								exhibition_image.image.url %>
+					<% end %>
+				</div>
+				<div class="description">
+					<%= simple_format exhibition.description %>
+					<p class="title">Press Release<!-- Press Release --></p>
+					<p class="title">Poster<!-- Poster --></p>
+					<p>
+				</div>
+			</div>
+			
+			<div class="work">
+				<% first_exhibition_image = exhibition.exhibition_images.first %>
+				<%= image_tag first_exhibition_image.image,
+				 	:class => "full_size",
+					:alt => first_exhibition_image.artist + " - " + first_exhibition_image.title + " - " +									
+							first_exhibition_image.year.to_s + " - " + first_exhibition_image.media + " - " + 				
+							first_exhibition_image.dimensions %>
+				<div class="label">
+					<%= first_exhibition_image.artist %><br />
+					<span class="work_title"><%= first_exhibition_image.title %></span>, 
+					<%= first_exhibition_image.year %><br />
+					<%= first_exhibition_image.media %><br />
+					<%= first_exhibition_image.dimensions %>
+				</div>	
+			</div>	
+		</div>
+	<% end %>
+</div>

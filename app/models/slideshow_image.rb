@@ -3,5 +3,5 @@ class SlideshowImage < ActiveRecord::Base
   
   mount_uploader :image, SlideshowImageUploader
 
-  scope :live,          :conditions => "live IS TRUE"
+  scope :live, :conditions => "live IS TRUE"
 end
