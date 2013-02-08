@@ -3,3 +3,11 @@
 
 en:
   hello: "Hello world"
+
+  time:
+      formats:
+          reception: "%A, %B %d, %Y at %l:%M"
+
+  date:
+      formats:
+          show_run: "%B %d, %Y"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130208000322) do
+ActiveRecord::Schema.define(:version => 20130208225940) do
 
   create_table "about_infos", :force => true do |t|
     t.string   "title"
@@ -54,10 +54,11 @@ ActiveRecord::Schema.define(:version => 20130208000322) do
     t.date     "opening"
     t.date     "closing"
     t.text     "description"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
-    t.boolean  "live",           :default => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+    t.boolean  "live",               :default => false
     t.string   "artists"
+    t.time     "reception_end_time"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
