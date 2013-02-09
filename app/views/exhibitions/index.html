@@ -16,9 +16,9 @@
 					<% exhibition.exhibition_images.each do |exhibition_image| %>
 							<%= link_to image_tag(exhibition_image.image.thumbnail, 
 								:class => "thumbnail", 
-								:alt => exhibition_image.artist + " - " + exhibition_image.title + " - " + 
-										exhibition_image.year.to_s + " - " + exhibition_image.media + " - " + 
-										exhibition_image.dimensions,
+								:alt => [exhibition_image.artist, exhibition_image.title,
+										exhibition_image.year.to_s, exhibition_image.media,
+										exhibition_image.dimensions].join(" - "),
 								:data => {"image" => exhibition_image}),
 								exhibition_image.image.url %>
 					<% end %>
@@ -35,9 +35,9 @@
 				<% first_exhibition_image = exhibition.exhibition_images.first %>
 				<%= image_tag first_exhibition_image.image,
 				 	:class => "full_size",
-					:alt => first_exhibition_image.artist + " - " + first_exhibition_image.title + " - " +									
-							first_exhibition_image.year.to_s + " - " + first_exhibition_image.media + " - " + 				
-							first_exhibition_image.dimensions %>
+					:alt => [first_exhibition_image.artist, first_exhibition_image.title,
+							first_exhibition_image.year.to_s, first_exhibition_image.media,
+							first_exhibition_image.dimensions].join(" - ") %>
 				<div class="label">
 					<%= first_exhibition_image.artist %><br />
 					<span class="work_title"><%= first_exhibition_image.title %></span>, 
