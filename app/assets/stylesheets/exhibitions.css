@@ -1,0 +1,87 @@
+/*
+*= require reset.min
+*= require flexslider
+*= require redarrow
+*/
+
+/**************************************
+	Exhibitions Page 
+**************************************/
+#exhibitions {
+}
+
+.exhibition {
+	float: left;
+	width: 97%;
+	margin: 1%;
+	padding-left:1%;
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	min-height: 660px;
+}
+
+#exhibitions .thumbnail {
+	margin-top: 4px;
+	height: 50px;
+}
+
+#exhibitions .thumbnails {
+}
+
+#exhibitions .name {
+	font-family: 'Poiret One', sans-serif;
+}
+
+#exhibitions .artists {
+	font-family: 'Poiret One', sans-serif;	
+	color: Crimson;
+	font-size: 1.3em;
+	margin-bottom: 3px;
+}
+
+#exhibitions .opening, #exhibitions .dates {
+}
+
+#exhibitions .work {
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+}
+
+#exhibitions .info {
+	display: inline-block;
+	width: 49%;
+	float: left;
+	margin-top: 1%;
+}
+
+#exhibitions .work {
+	width: 375px;
+	float: left;
+}
+
+#exhibitions .work img {
+	display: block;
+	width: 375px;
+	height: auto;
+}
+#exhibitions .work .label {
+	font-size: .8em;
+	color: #aaa;
+	display: block;
+}
+
+.work_title {
+	font-style: italic;
+}
+
+.exhibition > .description {
+	margin-left: 1%;
+	width: 45%;
+}

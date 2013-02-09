@@ -3,3 +3,39 @@
 *= require flexslider
 *= require redarrow
 */
+
+/**************************************
+	Home page
+**************************************/
+
+#home {
+	overflow: hidden;
+	height: 98%;
+	position: relative;
+}
+
+#home li {
+    min-width: 900px;
+    min-height: 450px;
+    display: block;
+	position: relative;
+}
+
+.flex-caption {
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	zoom: 1;
+}
+
+.flex-caption {
+	margin: 0;
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.3);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	font-size: 14px;
+}
