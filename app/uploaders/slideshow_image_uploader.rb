@@ -1,5 +1,4 @@
-# encoding: utf-8
 
-class SlideshowImageUploader < RedArrowImageUploader
+class SlideshowImageUploader < ImageUploader
 
 end

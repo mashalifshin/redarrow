@@ -25,9 +25,10 @@
 				</div>
 				<div class="description">
 					<%= simple_format exhibition.description %>
-					<p class="title">Press Release<!-- Press Release --></p>
-					<p class="title">Poster<!-- Poster --></p>
 					<p>
+						<span class="title"><%= content_tag :a, "Press Release", :href => exhibition.press_release %></span>
+						<span class="title"><%= content_tag :a, "Poster", :href => exhibition.poster %></span>
+					</p>
 				</div>
 			</div>
 			
