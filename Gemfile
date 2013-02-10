@@ -32,7 +32,7 @@ gem 'fog'
 gem 'mini_magick'
 
 group :production do
-  gem 'unicorn'
+  gem 'puma'
 end
 
 
