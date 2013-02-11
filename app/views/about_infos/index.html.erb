@@ -1,36 +1,22 @@
+<div id="about" class="pane">
 
-			<div id="about" class="pane">
-				<p>
-					<span class="title">Mission</span><br /> 
-					The Red Arrow Gallery presents museum-caliber exhibitions by local and international artists working in all media. We are particularly devoted to developing and launching the careers of emerging and under-recognized artists at varying stages in their careers. Our goal is to respond quickly to what’s happening in the contemporary art scene, to encourage artists to experiment freely, and to educate art enthusiasts and collectors about new work. We strive to create an environment that is both risk-taking and welcoming for artists, collectors, and art appreciators alike.
-				</p>				
-				<div class="description">
-					<p>
-						<span class="title">Art in Joshua Tree</span><br />
-						Joshua Tree is a small town, but it has the highest concentration of creatives (artists, architects, filmmakers, musicians, and authors) per capita than any urban city around. Artists flock to the high desert like pioneers looking for a new frontier to buy affordable land, seek freedom from restrictions, work in solitude, and to be a part of an active arts community. Meanwhile the National Park brings in over 1.5 million visitors from all over the world. This equation constructs an ideal environment for exploring arts on the edge. As Ted Quinn once said, “It’s like having a world tour come to you.”
-						</span>
-					</p>
-					<p>
-						<span class="title">Rhonda Coleman</span> is a nationally-recognized arts professional and business entrepreneur with over twenty years of experience in the art and design field. Capitalizing on her BS in Business Administration, BA in Art History, and MA in Art History and Museum Studies, as well as her experience in the non-profit and corporate sectors, Coleman has successfully merged her art and business skills to benefit artists and the arts-interested public. 
-					</p>
-					<p>
-						As a former art museum curator, Coleman has held important positions at the Corcoran Gallery of Art in Washington D.C., the university art museum at the University of Southern California and the University of Washington's Henry Art Gallery (Seattle's contemporary art museum). She has published a number of books, taught art history, painting seminars, business, and professional development classes at major universities, speaks regularly to professional associations on a variety of subjects including art, design and entrepreneurial issues and sits on panels, advisory boards, and juries for prestigious organizations around the country.
-					</p>
-					<p>
-						In 2002, Coleman left the museum field to become the CEO and founding partner of the art and design firm THREAD and Director of Visual Arts for the non-profit art organization THREAD for ART (<a href="www.thread.net">www.thread.net</a>. Here she directed hundreds of projects with diverse teams as small as 2 and as large as 114, budgets from $500 to several million, vendors who deal in cryogenic sperm banks and vacuum-formed plastic, and themes ranging from aerospace to children.
-					</p>
-					<p>
-						Coleman has received many accolades for her curatorial and business achievements, donates her time to educational institutions, and volunteers for non-profits such as Boomtown Café. She was a board member for EO - the worldwide Entrepreneurs' Organization (previously YEO), for the Bumbershoot Arts Festival in Seattle, and now the 29 Palms Art Gallery.
-					</p>
-				</div>
-				
-				<div class="description">
-					<p>
-						<span class="title">History</span><br />
-						The Red Arrow Gallery has earned a solid reputation in the high-desert community and gained national and international recognition. The first art gallery to open in downtown Joshua Tree in 2007, the gallery set up shop in an old building marked with a 15-foot red arrow sign (the historic landmark that served as inspiration for the gallery’s name and logo). In 2010, with the mind for expansion, the gallery moved to the heart of Joshua Tree Village and is one of three galleries and many businesses that participate in the Joshua Tree Art Crawl on the 2nd Saturday of each month.
-					</p>
-					<p>
-					<span class="title">Katie Shaw</span> made her entrance into the art world by taking over the reins at The Red Arrow Gallery in February of 2007.  After earning an Associates Degree in Business and Communications from Ohio University and rising to Director of Sales for multi-million dollar software company CSI International over an 11 year career, Katie took on The Red Arrow Gallery in Joshua Tree.  With no formal background or education in the Arts, Katie curated over 50 exhibitions and worked with over 75 Artists from all the world during her 5 years as sole owner of The Red Arrow.  She is also the Founder of MISH MOSH – a Pop-Up Shop that sells Russian-Style Homemade Dumplings.  Katie and her family currently reside in Nashville, TN and plans have already begun to open The Red Arrow East.
-				</p>
-				</div>		
-			</div>
+	<div class="info_header">
+		<%= render :partial => "shared/info_snippet", :locals => { :info => @about_infos.shift }%>
+	</div>
+
+	<% left_hand_info = [] %>
+	<% @about_infos.each_with_index { |info, index| left_hand_info << info if index.odd? } %>
+	<% right_hand_info = @about_infos - left_hand_info %>
+
+	<div class="description">
+		<% left_hand_info.each do |info| %>
+			<%= render :partial => "shared/info_snippet", :locals => { :info => info } %>
+		<% end %>
+	</div>
+
+	<div class="description">
+		<% right_hand_info.each do |info| %>
+			<%= render :partial => "shared/info_snippet", :locals => { :info => info } %>
+		<% end %>
+	</div>
+</div>
