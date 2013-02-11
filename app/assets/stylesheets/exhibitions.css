@@ -85,3 +85,37 @@
 	margin-left: 1%;
 	width: 45%;
 }
+
+/**************************************
+	Styles for small viewports
+**************************************/
+@media all and (max-width: 840px) {
+
+	#exhibitions .work {
+		clear: both;
+		display: block;
+	}
+
+	#exhibitions .info {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 320px) {
+	#exhibitions .work {
+		display: block;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#exhibitions .work img {
+		display: block;
+		width: 300px;
+		height: auto;
+	}
+
+	#exhibitions .info {
+		width: 98%;
+	}
+}

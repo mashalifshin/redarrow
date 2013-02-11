@@ -16,29 +16,6 @@ body {
 	overflow: hidden;
 }
 
-#logo_spacer {
-	width: 90px;
-	height: 125px;
-	display: inline-block;
-	margin-top: -96px;
-	clear: left;
-}
-
-#old_logo_style {
-	width: 90px;
-	height: 125px;
-	text-align: center;
-	left: 50%;
-	margin-left:-42px;
-	position: absolute;
-	z-index: 10;
-	border-left: 1px solid #BBB;
-	border-right: 1px solid #BBB;
-	background-color: #fff;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-}
-
 #logo {
 	width: 90px;
 	height: 125px;
@@ -142,62 +119,11 @@ p {
 **************************************/
 @media all and (max-width: 840px) {
 
-	#logo_spacer {
-		display: none;
-	}
-	
-	#old_logo_style {
-		position: static;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-		
 	#nav {
 		margin-top: 0px;
 	}
 	
 	#port {
 		height: 60%;
-	}
-	
-	#exhibitions .work {
-		clear: both;
-		display: block;
-	}
-	
-	#exhibitions .info {
-		width: 100%;
-	}
-	
-	#contact #google_map {
-		display: none;
-	}
-	
-	#about .description {
-		width: 85%;
-	}
-}
-
-@media all and (max-width: 320px) {
-	#home {
-		display: none;
-	}
-	
-	#exhibitions .work {
-		display: block;
-		width: 300px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#exhibitions .work img {
-		display: block;
-		width: 300px;
-		height: auto;
-	}
-
-	#exhibitions .info {
-		width: 98%;
 	}
 }
