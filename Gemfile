@@ -33,6 +33,7 @@ gem 'mini_magick'
 
 group :production do
   gem 'puma'
+  gem 'newrelic_rpm'
 end
 
 
