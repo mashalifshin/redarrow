@@ -1,6 +1,5 @@
 /*
 *= require reset.min
-*= require flexslider
 *= require redarrow
 */
 
@@ -28,15 +27,4 @@
 .time {
 	float: right;
 	margin-right: 50%;
-}
-
-/**************************************
-	Styles for small viewports
-**************************************/
-@media all and (max-width: 840px) {
-
-	#contact #google_map {
-		display: none;
-	}
-
 }
