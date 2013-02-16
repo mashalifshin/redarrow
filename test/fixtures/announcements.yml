@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  text: MyString
+  link_target: MyString
+  start_date: 2013-02-15
+  end_date: 2013-02-15
+  live: false
+
+two:
+  text: MyString
+  link_target: MyString
+  start_date: 2013-02-15
+  end_date: 2013-02-15
+  live: false

@@ -1,3 +1,10 @@
+<% if !current_announcement.nil? %>
+	<div id="announcement">
+		<span id="ascii_arrow">&#45;&gt;</span>
+		<%= link_to current_announcement.text, current_announcement.link_target %>
+	</div>
+<% end %>
+
 <div id="information">
 	<span class="info_snippet">THE&nbsp;RED&nbsp;ARROW&nbsp;GALLERY</span>
 	<span class="info_snippet">61597&nbsp;29&nbsp;PALMS&nbsp;HWY,<span>
