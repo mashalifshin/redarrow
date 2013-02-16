@@ -1,21 +1,17 @@
 <div id="about" class="pane">
 
 	<div class="info_header">
-		<%= render :partial => "shared/info_snippet", :locals => { :info => @about_infos.shift }%>
+		<%= render :partial => "shared/info_snippet", :locals => { :info => get_header_snippet } unless get_header_snippet.nil?%>
 	</div>
 
-	<% left_hand_info = [] %>
-	<% @about_infos.each_with_index { |info, index| left_hand_info << info if index.odd? } %>
-	<% right_hand_info = @about_infos - left_hand_info %>
-
 	<div class="description">
-		<% left_hand_info.each do |info| %>
+		<% break_snippets_into_two_columns.first.each do |info| %>
 			<%= render :partial => "shared/info_snippet", :locals => { :info => info } %>
 		<% end %>
 	</div>
 
 	<div class="description">
-		<% right_hand_info.each do |info| %>
+		<% break_snippets_into_two_columns.last.each do |info| %>
 			<%= render :partial => "shared/info_snippet", :locals => { :info => info } %>
 		<% end %>
 	</div>
