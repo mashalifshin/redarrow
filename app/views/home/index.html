@@ -2,7 +2,7 @@
 	<ul class="slides">
 		<% @slideshow_images.shuffle.each do |slideshow_image| %>
 			<li>
-				<%= image_tag slideshow_image.image.url, :class => "slide" %>
+				<%= image_tag slideshow_image.image, :class => "slide" %>
 				<p class="flex-caption">
 					<%= slideshow_image.caption %>						
 				</p>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130216021704) do
+ActiveRecord::Schema.define(:version => 20130218061450) do
 
   create_table "about_infos", :force => true do |t|
     t.string   "title"
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(:version => 20130216021704) do
   end
 
   create_table "exhibition_images", :force => true do |t|
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.string   "image"
     t.integer  "exhibition_id"
     t.string   "artist"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20130216021704) do
     t.integer  "year"
     t.string   "media"
     t.string   "dimensions"
+    t.integer  "thumbnail_order"
   end
 
   create_table "exhibitions", :force => true do |t|

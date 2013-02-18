@@ -13,7 +13,7 @@
 					<%= l exhibition.opening, :format => :show_run %> - <%= l exhibition.closing, :format => :show_run %>
 				</div>
 				<div class="thumbnails">
-					<% exhibition.exhibition_images.each do |exhibition_image| %>
+					<% exhibition.exhibition_images.ordered.each do |exhibition_image| %>
 							<%= link_to image_tag(exhibition_image.image.thumbnail, 
 								:class => "thumbnail", 
 								:alt => [exhibition_image.artist, exhibition_image.title,
@@ -37,7 +37,7 @@
 			</div>
 			
 			<div class="work">
-				<% first_exhibition_image = exhibition.exhibition_images.first %>
+				<% first_exhibition_image = exhibition.exhibition_images.ordered.first %>
 				<%= image_tag first_exhibition_image.image,
 				 	:class => "full_size",
 					:alt => [first_exhibition_image.artist, first_exhibition_image.title,
