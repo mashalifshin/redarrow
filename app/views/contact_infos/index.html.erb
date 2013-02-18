@@ -1,35 +1,13 @@
 <div id="contact" class="pane">
 	<div class="description">
-		<p>
-		<span class="title">Visit</span><br />
-		The Red Arrow Gallery<br />
-		61597 29 Palms Hwy<br />
-		Joshua Tree, CA 92252<br />
-		</p>
-		<p>
-		<span class="title">Hours</span><br />
-		Saturday <span class="time">11 - 5</span><br />
-		Sunday <span class="time">11 - 4</span><br />
-		Weekdays by appointment<br />
-		</p>
-		<p>
-			<span class="title">Connect</span><br />
-			Rhonda Lane Coleman, Owner and Director<br />
-			<a href="mailto:rhonda@theredarrowgallery.com">rhonda@theredarrowgallery.com</a>
-			<p>
-				Katie A. Shaw, Owner<br />
-				<a href="mailto:katie@theredarrowgallery.com">katie@theredarrowgallery.com</a>
-			</p>
-			<p>
-				General info<br />
-				<a href="mailto:info@theredarrowgallery.com">info@theredarrowgallery.com</a>
-			</p>
-		</p>
+		<% @contact_infos.each do |info_snippet| %>
+			<span class="title"><%= info_snippet.title %></span><br />
+			<%= simple_format info_snippet.body %><br />
+		<% end %>
 	</div>	
 	<div class="description">
 		<p id="google_map">
-						<img
-	 src="http://maps.googleapis.com/maps/api/staticmap?center=The+Red+Arrow+Gallery,61597+29+Palms+Hwy,Joshua+Tree,CA+92252&amp;zoom=15&amp;size=400x400&amp;maptype=hybrid&amp;markers=color:blue%7C34.134826,-116.31919&amp;sensor=true&amp;key=ABQIAAAAeyJLqowA5XdpqVD-QIY0KhQgdH1M6247cmsfwcCikgcmm-MInRSCx6RYvVURx0iRQqzscElTdyi13Q" alt=".the.red.arrow.gallery." />
+			<img src="http://maps.googleapis.com/maps/api/staticmap?center=The+Red+Arrow+Gallery,61597+29+Palms+Hwy,Joshua+Tree,CA+92252&amp;zoom=15&amp;size=400x400&amp;maptype=hybrid&amp;markers=color:blue%7C34.134826,-116.31919&amp;sensor=true&amp;key=ABQIAAAAeyJLqowA5XdpqVD-QIY0KhQgdH1M6247cmsfwcCikgcmm-MInRSCx6RYvVURx0iRQqzscElTdyi13Q" alt=".the.red.arrow.gallery." />
 		</p>
 	</div>
 </div>

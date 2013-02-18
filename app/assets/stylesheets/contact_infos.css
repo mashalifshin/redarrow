@@ -12,19 +12,18 @@
 	margin-right: 5%;
 }
 
-#contact > .description {
+.description {
 	text-align: left;
-	margin-top: 2%;
+	margin-top: 3%;
 	float: left;
 	font-size: .9em;
 	margin-left: 10%;
 }
 
-#contact > .description > p {
-	margin-top: 30px;
+.description > p {
+	line-height: 1.5;
 }
 
-.time {
-	float: right;
-	margin-right: 50%;
+.description .title {
+	font-size: 1.5em;
 }
