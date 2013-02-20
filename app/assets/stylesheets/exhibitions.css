@@ -63,7 +63,6 @@
 	color: #aaa;
 	float: right;
 	text-align: right;
-	margin-top: -2.5em;
 }
 
 .work_title {
@@ -107,6 +106,7 @@
 
 	#exhibitions .label {
 		margin-right: 3em;
+		margin-top: -2.5em;
 	}
 }
 
@@ -127,4 +127,5 @@
 	#exhibitions .info {
 		width: 98%;
 	}
+
 }
