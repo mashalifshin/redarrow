@@ -1,0 +1,5 @@
+<div id="artists" class="pane">
+	<% @artists.each do |artist| %>
+		<%= render :partial => "artist", :locals => { :artist => artist } %>
+	<% end %>
+</div>

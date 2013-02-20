@@ -1,4 +1,4 @@
-class ExhibitionImageUploader < ImageUploader
+class WorkShowcaseImageUploader < ImageUploader
 
   include CarrierWave::MiniMagick
 

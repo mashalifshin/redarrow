@@ -5,7 +5,7 @@ $(document).ready(function(){
 		new Image().src = image_src;
 	});
 
-	// Display full sized exhibition image on thumbnail hover.
+	// Display full sized showcase image on thumbnail hover.
 	$('.thumbnail').hover(function() {
 		var image_data = $(this).data('image');
 		var image_src = image_data['image']['full_size']['url'];

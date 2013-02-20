@@ -1,10 +1,8 @@
 /**************************************
 	Exhibitions Page 
 **************************************/
-#exhibitions {
-}
-
-.exhibition {
+.exhibition,
+.artist {
 	float: left;
 	width: 97%;
 	margin: 1%;
@@ -16,12 +14,10 @@
 	border-radius: 10px;
 }
 
-#exhibitions .thumbnail {
+#exhibitions .thumbnail,
+#artists .thumbnail {
 	margin-top: 4px;
 	height: 50px;
-}
-
-#exhibitions .thumbnails {
 }
 
 #exhibitions .name {
@@ -35,7 +31,8 @@
 	margin-bottom: 3px;
 }
 
-#exhibitions .work {
+#exhibitions .work,
+#artists .work {
 	width: 49%;
 	text-align: center;
 	margin-top: 1%;
@@ -44,37 +41,43 @@
 	position: static;
 }
 
-#exhibitions .work_centering {
+#exhibitions .work_centering,
+#artists .work_centering {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
 	position: static;
 }
 
-#exhibitions .info {
+#exhibitions .info,
+#artists .info {
 	display: inline-block;
 	width: 49%;
 	float: left;
 	margin-top: 1%;
 }
 
-#exhibitions .label {
+#exhibitions .label,
+#artists .label {
 	font-size: .8em;
 	color: #aaa;
 	float: right;
 	text-align: right;
 }
 
-.work_title {
+#exhibitions .work_title,
+#artists .work_title {
 	font-style: italic;
 }
 
-.exhibition > .description {
+.exhibition > .description,
+.artist > .description {
 	margin-left: 1%;
 	width: 45%;
 }
 
-#exhibitions .compact_work {
+#exhibitions .compact_work,
+#artists .compact_work {
 	height: 200px;
 	width: 24%;
 	display: table;
@@ -83,7 +86,8 @@
 	margin-top: 2%;
 }
 
-#exhibitions .compact_image_centering {
+#exhibitions .compact_image_centering,
+#artists .compact_image_centering {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
@@ -96,35 +100,41 @@
 
 @media all and (max-width: 1020px) {
 
-	#exhibitions .work {
+	#exhibitions .work,
+	#artists .work {
 		width: 96%;
 	}
 
-	#exhibitions .info {
+	#exhibitions .info,
+	#artists .info {
 		width: 100%;
 	}
 
-	#exhibitions .label {
+	#exhibitions .label,
+	#artists .label {
 		margin-right: 3em;
 		margin-top: -2.5em;
 	}
 }
 
 @media all and (max-width: 320px) {
-	#exhibitions .work {
+	#exhibitions .work,
+	#artists .work {
 		display: block;
 		width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	#exhibitions .work img {
+	#exhibitions .work img,
+	#artists .work img {
 		display: block;
 		width: 300px;
 		height: auto;
 	}
 
-	#exhibitions .info {
+	#exhibitions .info,
+	#artists .info {
 		width: 98%;
 	}
 

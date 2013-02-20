@@ -1,0 +1,9 @@
+<div class="work">
+	<div class="work_centering">
+		<%= image_tag showcase_image.image.full_size,
+		 	:class => "full_size",
+			:alt => [showcase_image.artist, showcase_image.title,
+					showcase_image.year.to_s, showcase_image.media,
+					showcase_image.dimensions].join(" - ") %>
+	</div>				
+</div>

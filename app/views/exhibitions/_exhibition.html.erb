@@ -1,14 +1,14 @@
 <div class="exhibition">
 	<div class="info">
 		<%= render :partial => "info", :locals => { :exhibition => exhibition } %>
-		<%= render :partial => "thumbnails", :locals => { :exhibition => exhibition} %>
+		<%= render :partial => "shared/thumbnails", :locals => { :showcase_images => exhibition.exhibition_images.ordered } %>
 		<div class="description">
 			<%= simple_format exhibition.description %>
 			<p>
 				<%= render :partial => "press_release_and_poster", :locals => { :exhibition => exhibition } %>
-				<%= render :partial => "label", :locals => { :exhibition => exhibition } %>
+				<%= render :partial => "shared/label", :locals => { :showcase_image => exhibition.exhibition_images.ordered.first } %>
 			</p>
 		</div>
 	</div>	
-	<%= render :partial => "full_size_work_image", :locals => { :exhibition => exhibition } %>
+	<%= render :partial => "shared/showcase_image", :locals => { :showcase_image => exhibition.exhibition_images.ordered.first } %>
 </div>

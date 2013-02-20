@@ -1,0 +1,14 @@
+<div class="artist">
+	<div class="info">
+		<div class="name title"><%= artist.name %></div>
+		<%= render :partial => "shared/thumbnails", :locals => { :showcase_images => artist.artist_images.ordered } %>
+		<div class="description">
+			<%= simple_format artist.statement %>
+			<p>
+				<%= render :partial => "cv_and_press", :locals => { :artist => artist } %>
+				<%= render :partial => "shared/label", :locals => { :showcase_image => artist.artist_images.ordered.first } %>
+			</p>
+		</div>
+	</div>
+	<%= render :partial => "shared/showcase_image", :locals => { :showcase_image => artist.artist_images.ordered.first } %>
+</div>

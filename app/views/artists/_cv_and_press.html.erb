@@ -1,0 +1,6 @@
+<span class="title">
+	<%= content_tag :a, "CV", :href => artist.cv unless artist.cv.url.nil? %>
+</span>
+<span class="title">
+	&nbsp;&nbsp;&nbsp;&nbsp;<%= content_tag :a, "Press", :href => artist.press unless artist.press.url.nil? %>
+</span>
