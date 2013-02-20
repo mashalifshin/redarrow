@@ -136,11 +136,21 @@ p {
 	}
 	
 	#port {
+		height: 75%;
+	}
+
+	#announcement {
+		height: 10%;
+		margin-right: 1px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	#port {
 		height: 60%;
 	}
 
 	#announcement {
 		height: 17%;
-		margin-right: 1px;
 	}
 }

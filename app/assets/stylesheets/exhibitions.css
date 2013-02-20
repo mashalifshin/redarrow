@@ -43,8 +43,6 @@
 	width: 49%;
 	text-align: center;
 	margin-top: 1%;
-	margin-bottom: 1%;
-	margin-left: 1%;
 }
 
 #exhibitions .info {
@@ -54,16 +52,12 @@
 	margin-top: 1%;
 }
 
-#exhibitions .work {
-}
-
-#exhibitions .work img {
-}
-
-#exhibitions .work .label {
+#exhibitions .label {
 	font-size: .8em;
 	color: #aaa;
-	display: block;
+	float: right;
+	text-align: right;
+	margin-top: -2.5em;
 }
 
 .work_title {
@@ -78,16 +72,19 @@
 /**************************************
 	Styles for small viewports
 **************************************/
-@media all and (max-width: 840px) {
+
+@media all and (max-width: 1020px) {
 
 	#exhibitions .work {
-		clear: both;
-		display: block;
-		float: left;
+		width: 96%;
 	}
 
 	#exhibitions .info {
 		width: 100%;
+	}
+
+	#exhibitions .label {
+		margin-right: 3em;
 	}
 }
 
