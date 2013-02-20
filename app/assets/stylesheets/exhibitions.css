@@ -14,7 +14,6 @@
 	-webkit-border-radius: 10px;
 	-o-border-radius: 10px;
 	border-radius: 10px;
-	min-height: 660px;
 }
 
 #exhibitions .thumbnail {
@@ -56,15 +55,11 @@
 }
 
 #exhibitions .work {
-	width: 375px;
-	float: left;
 }
 
 #exhibitions .work img {
-	display: block;
-	width: 375px;
-	height: auto;
 }
+
 #exhibitions .work .label {
 	font-size: .8em;
 	color: #aaa;
@@ -88,6 +83,7 @@
 	#exhibitions .work {
 		clear: both;
 		display: block;
+		float: left;
 	}
 
 	#exhibitions .info {

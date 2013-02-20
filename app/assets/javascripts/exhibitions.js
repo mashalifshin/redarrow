@@ -1,14 +1,14 @@
 $(document).ready(function(){
 	// Preload images to avoid lag on thumbnail hover.
 	$.each($('.thumbnail'), function() {
-		var image_src = $(this).data('image')['image']['url'];
+		var image_src = $(this).data('image')['image']['full_size']['url'];
 		new Image().src = image_src;
 	});
 
 	// Display full sized exhibition image on thumbnail hover.
 	$('.thumbnail').hover(function() {
 		var image_data = $(this).data('image');
-		var image_src = image_data['image']['url'];
+		var image_src = image_data['image']['full_size']['url'];
 		var alt_text = [image_data['artist'], image_data['title'],
 				image_data.year['to_s'], image_data['media'],
 				image_data['dimensions']].join(" - ");

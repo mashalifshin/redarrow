@@ -38,7 +38,7 @@
 			
 			<div class="work">
 				<% first_exhibition_image = exhibition.exhibition_images.ordered.first %>
-				<%= image_tag first_exhibition_image.image,
+				<%= image_tag first_exhibition_image.image.full_size,
 				 	:class => "full_size",
 					:alt => [first_exhibition_image.artist, first_exhibition_image.title,
 							first_exhibition_image.year.to_s, first_exhibition_image.media,
