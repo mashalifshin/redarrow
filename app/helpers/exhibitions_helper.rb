@@ -1,8 +1,7 @@
 module ExhibitionsHelper
 
-  def get_two_random_compact_images exhibition
-    shuffled_images = exhibition.exhibition_images.shuffle
-    [shuffled_images.first, shuffled_images.last]
+  def get_artist_name exhibition_image
+    exhibition_image.artist
   end
 
 end

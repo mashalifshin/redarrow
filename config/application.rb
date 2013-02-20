@@ -70,5 +70,9 @@ module Theredarrowgallery
     
     # Don't access DB or load models when precompiling assets -- for Heroku
     config.assets.initialize_on_precompile = false
+
+    # Don't include all helpers in all views, just the ones for the model/controller
+    config.action_controller.include_all_helpers = false
+
   end
 end
