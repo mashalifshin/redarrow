@@ -2,25 +2,16 @@
 	About page 
 **************************************/
 
-.info_header {
+#about .info_header {
 	margin-left:10%;
 	margin-right:10%;
-	margin-top: 1%;
-	margin-bottom: 1%;
 }
 
-#about > .description, #about > p {
+#about .description {
 	float: left;
 	width: 40%;
 	display: block;
 	margin-bottom: 2%;
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-#about > p {
-	width: 90%;
-	margin-top: 30px;
 	margin-left: 5%;
 	margin-right: 5%;
 }

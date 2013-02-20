@@ -7,7 +7,7 @@
 	margin-right: 5%;
 }
 
-.description {
+#contact .description {
 	text-align: left;
 	margin-top: 3%;
 	float: left;
@@ -15,10 +15,7 @@
 	margin-left: 10%;
 }
 
-.description > p {
+#contact p {
 	line-height: 1.5;
-}
-
-.description .title {
-	font-size: 1.5em;
+	font-size:  1em;
 }

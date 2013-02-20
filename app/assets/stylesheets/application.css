@@ -10,4 +10,5 @@
  *
  *= require reset
  *= require redarrow
+ *= require_tree .
  */
