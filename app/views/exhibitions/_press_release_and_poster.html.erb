@@ -1,0 +1,6 @@
+<span class="title">
+	<%= content_tag :a, "Press Release", :href => exhibition.press_release unless exhibition.press_release.url.nil? %>
+</span>
+<span class="title">
+	&nbsp;&nbsp;&nbsp;&nbsp;<%= content_tag :a, "Poster", :href => exhibition.poster unless exhibition.poster.url.nil? %>
+</span>

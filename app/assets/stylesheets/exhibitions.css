@@ -35,14 +35,20 @@
 	margin-bottom: 3px;
 }
 
-#exhibitions .opening, #exhibitions .dates {
-}
-
 #exhibitions .work {
-	display: inline-block;
 	width: 49%;
 	text-align: center;
 	margin-top: 1%;
+	height: 500px;
+	display: table;
+	position: static;
+}
+
+#exhibitions .work_centering {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	position: static;
 }
 
 #exhibitions .info {
@@ -67,6 +73,22 @@
 .exhibition > .description {
 	margin-left: 1%;
 	width: 45%;
+}
+
+#exhibitions .compact_work {
+	height: 200px;
+	width: 24%;
+	display: table;
+	position: static;
+	float: right;
+	margin-top: 2%;
+}
+
+#exhibitions .compact_image_centering {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	position: static;
 }
 
 /**************************************

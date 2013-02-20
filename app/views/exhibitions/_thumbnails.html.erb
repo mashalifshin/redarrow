@@ -1,0 +1,11 @@
+<div class="thumbnails">
+	<% exhibition.exhibition_images.ordered.each do |exhibition_image| %>
+			<%= link_to image_tag(exhibition_image.image.thumbnail, 
+				:class => "thumbnail", 
+				:alt => [exhibition_image.artist, exhibition_image.title,
+						exhibition_image.year.to_s, exhibition_image.media,
+						exhibition_image.dimensions].join(" - "),
+				:data => {"image" => exhibition_image}),
+				exhibition_image.image.full_size.url %>
+	<% end %>
+</div>

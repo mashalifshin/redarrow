@@ -1,0 +1,10 @@
+<div class="name title"><%= exhibition.title %></div>
+<div class="artists"><%= exhibition.artists %></div>
+<div class="opening">
+	<span class="title">Reception</span>
+	<%= l exhibition.reception_date, :format => :reception %> - <%= exhibition.reception_end_time.strftime("%l:%M %P") %>
+</div>
+<div class="dates">
+	<span class="title">Dates</span>
+	<%= l exhibition.opening, :format => :show_run %> - <%= l exhibition.closing, :format => :show_run %>
+</div>
