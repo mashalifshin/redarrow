@@ -20,12 +20,8 @@
 	<div class="description mailing_list_form">
 		<span class="title">Add me to the mailing list</span>
 		<%= form_for @contact, :url => contact_infos_path, :html => {:method => :post} do |f| %>
-			<%= f.label :name %>:
-		  	<%= f.text_field :name %>
-
 		  	<%= f.label :email %>:
 		  	<%= f.text_field :email %>
-
 		  	<%= f.submit "Add me", :id => "submit_mailing_list_contact" %>
 		<% end %>
 	</div>
