@@ -1,0 +1,65 @@
+#login_zone {
+	font-family: 'Poiret One', sans-serif;
+	font-size: 1.2em;
+	color: gray;
+}
+
+#login_zone form#new_user {
+	margin-top: 1%;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#login_zone h2 {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+}
+
+#login_zone input {
+	margin-bottom: 5%;
+}
+
+#login_zone #sign_in_button {
+	font-family: 'Poiret One', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#bAbAbA), to(#5A5A5A));
+	background: -moz-linear-gradient(bottom, #bAbAbA, #5A5A5A);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bAbAbA', endColorstr='#5A5A5A');
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	-webkit-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	-moz-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	color: #fff;
+	padding: .3em;
+	display: inline-block;
+	letter-spacing: 2px;
+	float: right;
+}
+
+#login_zone #sign_in_button:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#333));
+	background: -moz-linear-gradient(bottom, #6e6e6e, #333);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#333');
+	cursor: pointer;
+}
+
+#devise_authentication_links {
+	color: black;
+	letter-spacing: 4px;
+	text-align: center;
+	margin-top: 3%;
+}
