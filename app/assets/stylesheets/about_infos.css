@@ -16,6 +16,12 @@
 	margin-right: 5%;
 }
 
+#about .info_snippet_image {
+	float: left;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
 /**************************************
 	Styles for small viewports
 **************************************/
