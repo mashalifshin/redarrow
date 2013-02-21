@@ -6,11 +6,12 @@ Theredarrowgallery::Application.routes.draw do
 
   root :to => 'home#index'
 
-  resources :exhibitions
   resources :artists
+  resources :exhibitions
   resources :contact_infos, :path => 'contact'
   resources :about_infos, :path => 'about'
   resources :history_infos, :path => 'history'
+  resources :mailing_list_contacts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

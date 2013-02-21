@@ -1,13 +1,32 @@
 <div id="contact" class="pane">
+
 	<div class="description">
 		<% @contact_infos.each do |info_snippet| %>
 			<span class="title"><%= info_snippet.title %></span><br />
 			<%= simple_format info_snippet.body %><br />
 		<% end %>
-	</div>	
-	<div class="description">
+	</div>
+
+	<div id="google_map_container" class="description">
 		<p id="google_map">
 			<img src="http://maps.googleapis.com/maps/api/staticmap?center=The+Red+Arrow+Gallery,61597+29+Palms+Hwy,Joshua+Tree,CA+92252&amp;zoom=15&amp;size=400x400&amp;maptype=hybrid&amp;markers=color:blue%7C34.134826,-116.31919&amp;sensor=true&amp;key=ABQIAAAAeyJLqowA5XdpqVD-QIY0KhQgdH1M6247cmsfwcCikgcmm-MInRSCx6RYvVURx0iRQqzscElTdyi13Q" alt=".the.red.arrow.gallery." />
 		</p>
+	</div>
+
+	<% @contact.errors.full_messages.each do |msg| %>
+      <div class="mailing_list_form_error"><%= msg %></div>
+    <% end %>
+
+	<div class="description mailing_list_form">
+		<span class="title">Add me to the mailing list</span>
+		<%= form_for @contact, :url => contact_infos_path, :html => {:method => :post} do |f| %>
+			<%= f.label :name %>:
+		  	<%= f.text_field :name %>
+
+		  	<%= f.label :email %>:
+		  	<%= f.text_field :email %>
+
+		  	<%= f.submit "Add me", :id => "submit_mailing_list_contact" %>
+		<% end %>
 	</div>
 </div>

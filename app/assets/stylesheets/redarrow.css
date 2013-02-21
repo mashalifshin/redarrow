@@ -126,6 +126,20 @@ p {
 	color: Crimson;
 }
 
+.flash_notice {
+	font-family: 'Poiret One', sans-serif;
+	color: LightGreen;
+	width: 100%;
+	text-align: center;
+}
+
+.flash_error {
+	font-family: 'Poiret One', sans-serif;
+	color: Crimson;
+	width: 100%;
+	text-align: center;
+}
+
 /**************************************
 	Styles for small viewports 
 **************************************/

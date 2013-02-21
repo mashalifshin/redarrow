@@ -19,3 +19,71 @@
 	line-height: 1.5;
 	font-size:  1em;
 }
+
+#contact #google_map_container {
+	margin-left: 5%;
+}
+
+#contact .mailing_list_form {
+	clear: both;
+	float: left;
+	margin-top: 1%;
+	width: 91%;
+}
+
+#contact form {
+	display: inline-block;
+}
+
+#contact label {
+	font-size: .9em;
+	color: #333;
+	margin-left: 2em;
+}
+
+#contact #submit_mailing_list_contact {
+	font-family: 'Poiret One', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#bAbAbA), to(#5A5A5A));
+	background: -moz-linear-gradient(bottom, #bAbAbA, #5A5A5A);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bAbAbA', endColorstr='#5A5A5A');
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+	-webkit-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	-moz-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	color: #fff;
+	padding: .5em;
+	display: inline-block;
+	letter-spacing: 2px;
+	margin-left: 20px;
+}
+
+#contact #submit_mailing_list_contact:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#333));
+	background: -moz-linear-gradient(bottom, #6e6e6e, #333);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#333');
+	cursor: pointer;
+}
+
+#contact .mailing_list_form_error {
+	clear: both;
+	margin-top: 1%;
+	font-family: 'Poiret One', sans-serif;
+	color: Crimson;
+	margin-left: 10%;
+}
+
+#contact .field_with_errors,
+#contact .field_with_errors label {
+	display: inline-block;
+}
+
+#contact .field_with_errors label {
+	border: 1px none Crimson;
+	border-style: none none dotted none;
+}
