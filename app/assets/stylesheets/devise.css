@@ -1,10 +1,10 @@
-#login_zone {
+.authentication_zone {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 1.2em;
 	color: gray;
 }
 
-#login_zone form#new_user {
+.authentication_zone form#new_user {
 	margin-top: 5%;
 	width: 200px;
 	margin-left: auto;
@@ -17,11 +17,11 @@
 	border-radius: 10px;
 }
 
-#login_zone input {
+.authentication_zone input {
 	margin-bottom: 5%;
 }
 
-#login_zone #sign_in_button {
+.authentication_zone .authentication_button {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 1em;
 	text-align: center;
@@ -43,11 +43,40 @@
 	float: right;
 }
 
-#login_zone #sign_in_button:hover {
+.authentication_zone .authentication_button:hover {
 	background: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#333));
 	background: -moz-linear-gradient(bottom, #6e6e6e, #333);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#333');
 	cursor: pointer;
+}
+
+.authentication_zone .authentication_button#reset_instructions_button,
+.authentication_zone .authentication_button#change_password_button {
+	float: left;
+}
+
+.authentication_zone #error_explanation {
+	margin-bottom: 3%;
+}
+
+.authentication_zone #error_explanation ul {
+	list-style: circle;
+	color: Crimson;
+}
+
+.authentication_zone .field_with_errors {
+	display: inline-block;
+}
+
+.authentication_zone .field_with_errors label {
+	border: 1px dotted Crimson;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.authentication_zone .field_with_errors input {
+	margin-top: 1%;
 }
 
 #devise_authentication_links {
