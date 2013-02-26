@@ -25,6 +25,8 @@ gem 'jquery-rails'
 
 gem 'rails_admin'
 
+gem 'cancan'
+
 gem 'carrierwave'
 
 gem 'fog'

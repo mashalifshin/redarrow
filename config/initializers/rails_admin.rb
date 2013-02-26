@@ -5,6 +5,8 @@ RailsAdmin.config do |config|
 
 
   ################  Global configuration  ################
+  # Use CanCan authorization
+  config.authorize_with :cancan
 
   # Set the admin name here (optional second array element will appear in red). For example:
   config.main_app_name = ['The Red Arrow Gallery', 'Admin']
