@@ -62,7 +62,7 @@ body {
 	box-shadow: 0 0px 1px rgba(255,255,255,0.1);
 	color: #fff;
 	padding: .5em;
-	position: fixed;
+	position: absolute;
 	right: 0px;
 	top: 0px;
 	margin-top: 2px;
