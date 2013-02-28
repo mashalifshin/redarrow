@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   protect_from_forgery  
   
-  def show
-    @slideshow_images = SlideshowImage.live
+  def index
+    @slideshow_images = SlideshowImage.live.shuffle
   end
 end
