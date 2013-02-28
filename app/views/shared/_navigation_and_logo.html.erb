@@ -3,9 +3,13 @@
 </div>
 
 <div id="nav">
-	<%= link_to "HOME", root_url, :class => "nav_button" %>
-	<%= link_to "EXHIBITIONS", exhibitions_path, :class => "nav_button" %>
-	<%= link_to "ARTISTS", artists_path, :class => "nav_button" %>
-	<%= link_to "CONTACT", contact_infos_path, :class => "nav_button" %>
-	<%= link_to "ABOUT", about_infos_path, :class => "nav_button" %>
+	<%= link_to "HOME", root_url, :class => controller.class == HomeController ? "nav_button current" : "nav_button" %>
+	<%= link_to "EXHIBITIONS", exhibitions_path, :class => controller.class == ExhibitionsController ? "nav_button current" : "nav_button" %>
+	<%= link_to "ARTISTS", artists_path, :class => controller.class == ArtistsController ? "nav_button current" : "nav_button" %>
+	<%= link_to "CONTACT", contact_infos_path, :class => controller.class == ContactInfosController ? "nav_button current" : "nav_button" %>
+	<%= link_to "ABOUT", about_infos_path, :class => controller.class == AboutInfosController ? "nav_button current" : "nav_button" %>
 </div>
+
+<% if user_signed_in? %>
+  <%= link_to 'Logout', destroy_user_session_path, :method => :delete, :id => "sign_out_button" %>
+<% end %>

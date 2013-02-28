@@ -44,6 +44,38 @@ body {
 	color: gray;
 }
 
+#sign_out_button {
+	font-family: 'Poiret One', sans-serif;
+	font-size: .7em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#bAbAbA), to(#5A5A5A));
+	background: -moz-linear-gradient(bottom, #bAbAbA, #5A5A5A);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bAbAbA', endColorstr='#5A5A5A');
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	-webkit-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	-moz-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+	color: #fff;
+	padding: .5em;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+
+#sign_out_button:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#6e6e6e), to(#333));
+	background: -moz-linear-gradient(bottom, #6e6e6e, #333);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e6e6e', endColorstr='#333');
+	cursor: pointer;
+}
+
 #port {
 	border-top: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;	
@@ -90,6 +122,10 @@ a:hover, a:focus {
 
 a:active  {
 	color: DeepPink;
+}
+
+.current {
+	color: rgb(67, 170, 255);
 }
 
 p {
@@ -150,6 +186,10 @@ p {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+
+	#sign_out_button {
+		margin-top: 0px;
+	}
 	
 	#port {
 		height: 75%;
@@ -168,5 +208,9 @@ p {
 
 	#announcement {
 		height: 17%;
+	}
+
+	#sign_out_button {
+		margin-top: 20px;
 	}
 }

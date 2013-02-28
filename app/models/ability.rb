@@ -12,9 +12,20 @@ class Ability
         can [:read, :update], Artist, :live => true, :user_id => user.id
         can :manage, ArtistImage, :artist => { :user_id => user.id }
       elsif user && user.role == "client"
-        # view/edit client pages
+        cannot :access, :rails_admin
+        cannot :dashboard
+        can :read, ClientImage, :live => true, :user_id => user.id
       else      
-        # view frontend, no edits
+        cannot :access, :rails_admin
+        cannot :dashboard
+        can :read, AboutInfo
+        can :read, Announcement
+        can :read, Artist
+        can :read, ArtistImage
+        can :read, ContactInfo
+        can :read, Exhibition
+        can :read, ExhibitionImage
+        can :read, SlideshowImage
      end
    end
 

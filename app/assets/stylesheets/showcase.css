@@ -72,7 +72,8 @@
 }
 
 #exhibitions .work_title,
-#artists .work_title {
+#artists .work_title,
+#exclusive .work_title {
 	font-style: italic;
 }
 

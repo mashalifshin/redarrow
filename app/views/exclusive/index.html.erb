@@ -1,0 +1,23 @@
+<div id="exclusive">
+	<div class="header">
+		Exclusive for <%= current_user.name %>
+	</div>
+	
+	<ul class="rslides">
+	<% @images.each do |image| %>
+		<li class="client_image">
+			<%= image_tag image.image.large, 
+			:class => "client_image",
+			:alt => [image.artist, image.title,
+					image.year.to_s, image.media,
+					image.dimensions].join(" - ") %>
+			<div class="comments_and_label">
+				<p>
+					<%= render :partial => "shared/label", :locals => { :showcase_image => image } %>
+				</p>
+				<%= simple_format image.comment %>
+			</div>
+		</li>
+	<% end %>
+	</ul>
+</div>

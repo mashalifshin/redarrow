@@ -14,20 +14,19 @@
 
 </head>
 <body>
+	<% if flash[:notice] %>
+		<div class="flash_notice"><%= flash[:notice] %></div>
+	<% end %>
+	<% if flash[:error] %>
+		<div class="flash_error"><%= flash[:error] %></div>
+	<% end %>
+	<% if flash[:alert] %>
+		<div class="flash_error"><%= flash[:alert] %></div>
+	<% end %>
 
 	<%= render "shared/navigation_and_logo" %>
 
 	<div id="port">
-		<% if flash[:notice] %>
-			<div class="flash_notice"><%= flash[:notice] %></div>
-		<% end %>
-		<% if flash[:error] %>
-			<div class="flash_error"><%= flash[:error] %></div>
-		<% end %>
-		<% if flash[:alert] %>
-			<div class="flash_error"><%= flash[:alert] %></div>
-		<% end %>
-
 		<%= yield %>
 	</div>
 
