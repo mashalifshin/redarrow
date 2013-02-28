@@ -188,7 +188,9 @@ p {
 	}
 
 	#sign_out_button {
-		margin-top: 0px;
+		position: static;
+		display: inline-block;
+		margin-bottom: 2px;
 	}
 	
 	#port {
@@ -208,9 +210,5 @@ p {
 
 	#announcement {
 		height: 17%;
-	}
-
-	#sign_out_button {
-		margin-top: 20px;
 	}
 }

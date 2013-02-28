@@ -8,8 +8,8 @@
 	<%= link_to "ARTISTS", artists_path, :class => controller.class == ArtistsController ? "nav_button current" : "nav_button" %>
 	<%= link_to "CONTACT", contact_infos_path, :class => controller.class == ContactInfosController ? "nav_button current" : "nav_button" %>
 	<%= link_to "ABOUT", about_infos_path, :class => controller.class == AboutInfosController ? "nav_button current" : "nav_button" %>
+	<% if user_signed_in? %>
+	  <%= link_to 'Logout ' + users_first_name, destroy_user_session_path, :method => :delete, :id => "sign_out_button" %>
+	<% end %>
 </div>
 
-<% if user_signed_in? %>
-  <%= link_to 'Logout', destroy_user_session_path, :method => :delete, :id => "sign_out_button" %>
-<% end %>
