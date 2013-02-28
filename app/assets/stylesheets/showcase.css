@@ -130,6 +130,7 @@
 	#artists .label {
 		margin-right: 3em;
 		margin-top: -2.5em;
+		text-indent: 0;
 	}
 }
 
