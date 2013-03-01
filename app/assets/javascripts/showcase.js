@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$('.thumbnail').hover(function() {
 		var image_data = $(this).data('image');
 		// If we are on the artists page, we don't show the artist name again in the label:
-		var artist_name = image_data['artist'] === undefined ? "" : image_data['artist'];
+		var artist_name = image_data['artist'] === undefined ? $(this).attr('alt').split(' - ')[0] : image_data['artist'];
 		var image_src = image_data['image']['full_size']['url'];
 		var alt_text = [artist_name, image_data['title'],
 				image_data.year['to_s'], image_data['media'],

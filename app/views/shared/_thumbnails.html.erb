@@ -2,7 +2,7 @@
 	<% showcase_images.each do |showcase_image| %>
 			<%= link_to image_tag(showcase_image.image.thumbnail, 
 				:class => "thumbnail", 
-				:alt => [showcase_image.artist, showcase_image.title,
+				:alt => [get_artist_name(showcase_image), showcase_image.title,
 						showcase_image.year.to_s, showcase_image.media,
 						showcase_image.dimensions].join(" - "),
 				:data => {"image" => showcase_image}),

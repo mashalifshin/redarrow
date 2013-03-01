@@ -1,4 +1,9 @@
 <div id="artists" class="pane">
+	<div id="artist_names">
+		<% @artists.collect {|artist| artist.name }.each do |artist_name| %>
+			<span class="artist_name_heading"><%= link_to artist_name, '#' + artist_name %></span>
+		<% end %>
+	</div>
 	<% @artists.each do |artist| %>
 		<%= render :partial => "artist", :locals => { :artist => artist } %>
 	<% end %>

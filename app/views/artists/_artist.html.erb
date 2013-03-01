@@ -1,4 +1,4 @@
-<div class="artist">
+<%= content_tag 'div', :class => "artist", :id => artist.name do %>
 	<div class="info">
 		<div class="name title"><%= artist.name %></div>
 		<%= render :partial => "shared/thumbnails", :locals => { :showcase_images => artist.artist_images.ordered } %>
@@ -11,5 +11,5 @@
 		</div>
 	</div>
 	<%= render :partial => "shared/showcase_image", :locals => { :showcase_image => artist.artist_images.ordered.first } %>
-</div>
+<% end %>
 <div class="fleuron">&#10086;</div>
