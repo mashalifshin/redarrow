@@ -1,11 +1,11 @@
-<div id="home" class="pane flexslider">								
+<div id="home" class="pane">
 	<ul class="slides">
 		<% @slideshow_images.each do |slideshow_image| %>
 			<li>
 				<%= image_tag slideshow_image.image.slide, :class => "slide" %>
-				<p class="flex-caption">
+				<span class="caption">
 					<%= slideshow_image.caption %>						
-				</p>
+				</span>
 			</li>		
 		<% end %>
 	</ul>	
