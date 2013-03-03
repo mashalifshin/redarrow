@@ -8,13 +8,6 @@
 	position: relative;
 }
 
-#home li {
-    min-width: 900px;
-    min-height: 450px;
-    display: block;
-	position: relative;
-}
-
 .caption {
 	display: block;
 	position: absolute;
