@@ -1,9 +1,13 @@
 $(document).ready(function(){
-	// Preload images to avoid lag on thumbnail hover.
-	$.each($('.thumbnail'), function() {
-		var image_src = $(this).data('image')['image']['full_size']['url'];
-		new Image().src = image_src;
-	});
+
+	// Only preload large images if we are not on a mobile device, and therefore the div is present.
+	if ($('.work').length > 0) {
+		// Preload images to avoid lag on thumbnail hover.
+		$.each($('.thumbnail'), function() {
+			var image_src = $(this).data('image')['image']['full_size']['url'];
+			new Image().src = image_src;
+		});
+	}
 
 	// Display full sized showcase image on thumbnail hover.
 	$('.thumbnail').hover(function() {
@@ -24,4 +28,5 @@ $(document).ready(function(){
 		$(this).closest('.info').siblings('.work').find('.full_size').attr('alt', alt_text);
 		$(this).closest('.info').find('.label').replaceWith(label_dom);
 	});
+
 });
