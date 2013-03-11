@@ -57,8 +57,10 @@
 /**************************************
 	Styles for small viewports
 **************************************/
-@media all and (max-width: 320px) {
-	#home {
-		display: none;
+
+@media all and (max-width: 640px) {
+	.slides img {
+		height: 100%;
+		width: auto;
 	}
 }

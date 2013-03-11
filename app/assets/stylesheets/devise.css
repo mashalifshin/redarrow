@@ -21,6 +21,11 @@
 	margin-bottom: 5%;
 }
 
+.authentication_zone input[type="password"],
+.authentication_zone input[type="email"] {
+	width: 100%;
+}
+
 .authentication_zone .authentication_button {
 	font-family: 'Poiret One', sans-serif;
 	font-size: 1em;
@@ -84,4 +89,6 @@
 	letter-spacing: 4px;
 	text-align: center;
 	margin-top: 3%;
+	width: 100%;
+	display: inline-block;
 }

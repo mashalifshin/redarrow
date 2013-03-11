@@ -7,11 +7,7 @@
 		<% end %>
 	</div>
 
-	<div id="google_map_container" class="description">
-		<p id="google_map">
-			<img src="http://maps.googleapis.com/maps/api/staticmap?center=The+Red+Arrow+Gallery,61597+29+Palms+Hwy,Joshua+Tree,CA+92252&amp;zoom=15&amp;size=400x400&amp;maptype=hybrid&amp;markers=color:blue%7C34.134826,-116.31919&amp;sensor=true&amp;key=ABQIAAAAeyJLqowA5XdpqVD-QIY0KhQgdH1M6247cmsfwcCikgcmm-MInRSCx6RYvVURx0iRQqzscElTdyi13Q" alt=".the.red.arrow.gallery." />
-		</p>
-	</div>
+	<%= render :partial => "google_map" %>
 
 	<% @contact.errors.full_messages.each do |msg| %>
       <div class="mailing_list_form_error"><%= msg %></div>
