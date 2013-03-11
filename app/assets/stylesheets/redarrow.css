@@ -199,3 +199,11 @@ p {
 		margin-right: 1px;
 	}
 }
+
+@media all and (max-width: 500px) {
+
+	.nav_button {
+		font-size: 2em;
+		width: auto;
+	}
+}
