@@ -201,11 +201,3 @@ p {
 		font-size: 2em;
 	}
 }
-
-@media all and (max-height: 800px) {
-
-	#port {
-		height: 55%;
-	}
-
-}
