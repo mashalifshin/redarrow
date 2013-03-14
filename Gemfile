@@ -33,6 +33,8 @@ gem 'fog'
 
 gem 'mini_magick'
 
+gem 'weinre-rails'
+
 group :production do
   gem 'puma'
   gem 'newrelic_rpm'
