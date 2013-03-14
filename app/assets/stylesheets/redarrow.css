@@ -20,7 +20,7 @@ body {
 	width: 90px;
 	height: 125px;
 	text-align: center;
-	position: absolute;
+	position: fixed;
 	z-index: 10;
 	bottom: 0;
 	right: 0;
@@ -36,10 +36,9 @@ body {
 }
 
 .nav_button {
-	width: 100px;
 	display: inline-block;
 	text-align: center;
-	padding: 3px 6px 3px 1px;
+	padding: 3px 20px 3px 1px;
 	font-size: 1em;
 	color: gray;
 }
@@ -190,10 +189,6 @@ p {
 		display: inline-block;
 		margin-bottom: 2px;
 	}
-	
-	#port {
-		height: 75%;
-	}
 
 	#announcement {
 		margin-right: 1px;
@@ -204,6 +199,13 @@ p {
 
 	.nav_button {
 		font-size: 2em;
-		width: auto;
 	}
+}
+
+@media all and (max-height: 800px) {
+
+	#port {
+		height: 55%;
+	}
+
 }
